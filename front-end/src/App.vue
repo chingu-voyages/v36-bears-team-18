@@ -1,8 +1,17 @@
 <template>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
