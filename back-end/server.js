@@ -7,7 +7,7 @@ const {readdirSync} = require('fs')
 require("dotenv").config()
 
 
-//app
+//app instantiation
 const app = express()
 
 //database connection
