@@ -2,8 +2,12 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <ul class="flex">
-        <li><span class="logo"> Logo </span></li>
+      <ul class="nav-logo">
+        <li>
+          <span class="logo">Logo</span>
+        </li>
+      </ul>
+      <ul class="nav-menu">
         <li>
           <a href="/" class="nav-link">Home</a>
         </li>
@@ -14,7 +18,11 @@
           <a href="/" class="nav-link">About</a>
         </li>
       </ul>
-      <ul>
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check" />
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      </div>
+      <ul class="nav-account">
         <li>
           <a href="/" class="nav-link">
             <svg
@@ -38,20 +46,105 @@
 </template>
 
 <script>
-export default {
-  name: 'TheNavbar',
-};
+  export default {
+    name: "TheNavbar",
+  };
 </script>
 
 <style lang="scss" scoped>
-nav {
-  margin-top: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.7)
+  }
 
-.logo {
-  color: $orange;
-}
+  .nav-logo {
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    li {
+      padding: 0 10px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .nav-account {
+    margin-right: 10px;
+  }
+
+  .logo {
+    color: $orange;
+    padding: 0;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  #menu-btn-check {
+    display: none;
+  }
+
+  @media (max-width: 425px) {
+    .container {
+    }
+    .nav-menu {
+      display: none;
+    }
+    .nav-account {
+      display: none;
+    }
+    // hamburger-menu
+    .hamburger-menu {
+    display: block;
+  }
+    .menu-btn {
+      position: fixed;
+      right: 10px;
+      display: flex;
+      height: 50px;
+      width: 50px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      position: absolute;
+    }
+    .menu-btn span:before {
+      bottom: 8px;
+    }
+    .menu-btn span:after {
+      top: 8px;
+    }
+    #menu-btn-check:checked ~ .menu-btn span {
+      background-color: rgba(255, 255, 255, 0);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
 </style>
