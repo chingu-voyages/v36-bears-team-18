@@ -3,19 +3,31 @@
 </template>
 
 <style lang="scss">
-li {
-  list-style: none;
-}
+// General style //
+html, body {
+  height : 100%;
+  }
 
-.container {
-  margin: 0 auto;
-}
+li {
+  list-style : none;
+  }
+// Helper class //
+.wrapper {
+  max-width     : 960px;
+  margin        : 0 auto;
+  padding-left  : 10px;
+  padding-right : 10px;
+  }
+
+.d-block {
+  display: block;
+  }
+
+.d-inline-block {
+  display: inline-block;
+  }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  min-height : 100vh;
+  }
 </style>
