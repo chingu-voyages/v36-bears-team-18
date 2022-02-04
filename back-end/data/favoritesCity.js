@@ -3,11 +3,11 @@ const CITIES = [
         country: "Spain",
         city: "Barcelona",
         population: "1.62 million",
-        landscape: "https://images.unsplash.com/photo-1583422409516-2895a77efded",
+        landscape: "https://images.unsplash.com/photo-1583422409516-2895a77efded?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60",
         placeVisit: [
             {
                 name: "Sagrada Familla",
-                imageUrl: "https://images.unsplash.com/photo-1569661341346-96bdffdd6295"
+                imageUrl: "https://images.unsplash.com/photo-1569661341346-96bdffdd6295?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             },
             {
                 name: "Parc de la Ciutadella",
@@ -27,7 +27,7 @@ const CITIES = [
         country: "France",
         city: "Paris",
         population: "2.161 million",
-        landscape: "https://images.unsplash.com/photo-1550340499-a6c60fc8287c",
+        landscape: "https://images.unsplash.com/photo-1550340499-a6c60fc8287c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60",
         placeVisit: [
             {
                 name: "Eiffel Tower",
@@ -35,7 +35,7 @@ const CITIES = [
             },
             {
                 name: "Jardin des Tuileries",
-                imageUrl: "https://images.unsplash.com/photo-1564227589927-2a13874d0a92"
+                imageUrl: "https://images.unsplash.com/photo-1564227589927-2a13874d0a92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             },
             {
                 name: "Louvre Museum",
@@ -43,7 +43,7 @@ const CITIES = [
             },
             {
                 name: "Palace of Versailles",
-                imageUrl: "https://images.unsplash.com/photo-1566087247505-cd95ebd53df9"
+                imageUrl: "https://images.unsplash.com/photo-1566087247505-cd95ebd53df9//1920x600"
             }
         ]
     },
@@ -51,7 +51,7 @@ const CITIES = [
         country: "Italy",
         city: "Venice",
         population: "261,905",
-        landscape: "https://images.unsplash.com/photo-1520175480921-4edfa2983e0f",
+        landscape: "https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60",
         placeVisit: [
             {
                 name: "St.Mark's Basilica",
@@ -75,23 +75,23 @@ const CITIES = [
         country: "Japan",
         city: "Tokyo",
         population: "14.04 million",
-        landscape: "https://images.unsplash.com/photo-1551322120-c697cf88fbdc",
+        landscape: "https://images.unsplash.com/photo-1551322120-c697cf88fbdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60",
         placeVisit: [
             {
                 name: "Sensouji Temple",
-                imageUrl: "https://images.unsplash.com/photo-1580167227251-be70f01b0c51"
+                imageUrl: "https://images.unsplash.com/photo-1580167227251-be70f01b0c51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             },
             {
                 name: "teamLab Borderless and teamLab Planets",
-                imageUrl: "https://images.unsplash.com/photo-1592997264946-028edf8ea505"
+                imageUrl: "https://images.unsplash.com/photo-1592997264946-028edf8ea505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             },
             {
                 name: "Tokyo Tower",
-                imageUrl: "https://images.unsplash.com/photo-1609383020819-ccff2af581ce"
+                imageUrl: "https://images.unsplash.com/photo-1609383020819-ccff2af581ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             },
             {
                 name: "Ameyoko",
-                imageUrl: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf"
+                imageUrl: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyY2Vsb25hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
             }
         ]
     }
