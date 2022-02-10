@@ -1,7 +1,6 @@
 <template>
   <TheNavbar />
   <HeroSection />
-  <p>Landing page</p>
 </template>
 
 <script>
