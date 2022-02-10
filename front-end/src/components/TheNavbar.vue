@@ -18,10 +18,30 @@
           <a href="/" class="nav-link">About</a>
         </li>
       </ul>
+      <!-- responsive hamburger menu -->
       <div class="hamburger-menu">
         <input type="checkbox" id="menu-btn-check" />
         <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+           <ul class="hamburger-logo">
+            <li>
+              <span class="">Logo</span>
+            </li>
+          </ul>
+          <ul class="hamburger-menu-content">
+            <li>
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="/" class="nav-link">Destination</a>
+            </li>
+            <li>
+              <a href="/" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <!-- /responsive hamburger menu -->
       <ul class="nav-account">
         <li>
           <a href="/" class="nav-link">
@@ -57,7 +77,7 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background: rgba(0, 0, 0, 0.7)
+    background: transparent;
   }
 
   .nav-logo {
@@ -75,7 +95,7 @@
       padding: 0 10px;
       a {
         text-decoration: none;
-        color: white;
+        color: $white;
       }
     }
   }
@@ -94,10 +114,58 @@
   #menu-btn-check {
     display: none;
   }
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: $orange;
+    transition: all 0.3s;
+  }
+  .hamburger-logo {
+    padding: 0!important;
+    margin-left: 10px;
+  }
 
+  .hamburger-logo li {
+    border: none!important;
+  }
+
+  .menu-content ul {
+    padding: 70px 10px 0;
+  }
+  .menu-content ul li {
+    border-bottom: solid 1px $white;
+    list-style: none;
+  }
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: $white;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+  }
+  .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px $white;
+    border-right: solid 2px $white;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+  }
+
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;
+  }
   @media (max-width: 425px) {
-    .container {
-    }
     .nav-menu {
       display: none;
     }
@@ -106,10 +174,10 @@
     }
     // hamburger-menu
     .hamburger-menu {
-    display: block;
-  }
+      display: block;
+    }
     .menu-btn {
-      position: fixed;
+      position: absolute;
       right: 10px;
       display: flex;
       height: 50px;
@@ -126,7 +194,7 @@
       height: 3px;
       width: 25px;
       border-radius: 3px;
-      background-color: #ffffff;
+      background-color: $white;
       position: absolute;
     }
     .menu-btn span:before {
