@@ -4,7 +4,8 @@
     <div class="container">
       <ul class="nav-logo">
         <li>
-          <span class="logo">Logo</span>
+          <span class="logo">✈️</span>
+          <span class="logo-text">NTD</span>
         </li>
       </ul>
       <ul class="nav-menu">
@@ -72,6 +73,12 @@
 </script>
 
 <style lang="scss" scoped>
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    }
   .container {
     width: 100%;
     display: flex;
@@ -194,7 +201,7 @@
       height: 3px;
       width: 25px;
       border-radius: 3px;
-      background-color: $white;
+      background-color: black;
       position: absolute;
     }
     .menu-btn span:before {
