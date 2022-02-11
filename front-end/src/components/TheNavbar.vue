@@ -112,9 +112,12 @@
   }
 
   .logo {
-    color: $orange;
-    padding: 0;
-  }
+    color   : $orange;
+    padding : 0;
+    }
+  .logo-text {
+      color: $color-primary;
+    }
   .hamburger-menu {
     display: none;
   }
@@ -201,7 +204,7 @@
       height: 3px;
       width: 25px;
       border-radius: 3px;
-      background-color: black;
+      background-color: $color-primary;
       position: absolute;
     }
     .menu-btn span:before {

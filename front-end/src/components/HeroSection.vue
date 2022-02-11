@@ -18,23 +18,13 @@
       <div class="wrapper">
         <p>Popular</p>
         <hr class="d-inline-block" />
-        <div class="slider">
-          <template v-for="city in this.popularCities" :key="city">
-            <img :src="city.landscape" :alt="city.city">
-          </template>
-          <div class="slider-navigation">
-            <button class="prev">
-              <svg class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/>
-              </svg>
-            </button>
-            <button class="next">
-              <svg class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
-              </svg>
-            </button>
-          </div>
-        </div>
+
+        <Splide :options=options>
+          <SplideSlide v-for="city in this.popularCities" :key="city">
+            <img :src="city.landscape" alt="Sample 1" class="splide-img">
+          </SplideSlide>
+        </Splide>
+
       </div>
     </div> <!-- popular-cities -->
 
@@ -42,10 +32,21 @@
 </template>
 
 <script>
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+
 export default {
   name: "HeroSection",
+  component: { Splide, SplideSlide},
   data() {
     return {
+      options: {
+        rewind: true,
+        perPage: 1,
+        gap   : '1rem',
+        height: '200px',
+        heightRatio: '400px',
+        pagination: false,
+      },
       popularCities: [
         {
           country: "Spain",
@@ -207,31 +208,10 @@ export default {
     width : 100px;
     }
   }
-
-.slider {
-  display : flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.splide-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 7px;
   }
 
-.slider img {
-  width  : 200px;
-  height : 200px;
-  }
-
-.prev, .next {
-  background: none;
-  border-radius: 100%;
-  border: 2px solid white;
-  padding: 0;
-  svg {
-    fill: white;
-    width: 20px;
-    height: 20px;
-    }
-  }
-.prev {
-  margin-right: 20px;
-  }
 </style>
