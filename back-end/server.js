@@ -12,12 +12,12 @@ require("dotenv").config()
 const app = express()
 
 //database connection
-const DB = process.env.DATABASE_LOCAL || process.env.DATABASE_PRODUCTION
+/*const DB = process.env.DATABASE_LOCAL || process.env.DATABASE_PRODUCTION
 mongoose.connect(DB, {
     useNewUrlParser: true,
 })
 .then(() => console.log('DB Connection Successful!'))
-.catch((err) => console.log("DB CONNECTION ERR", err));
+.catch((err) => console.log("DB CONNECTION ERR", err));*/
 
 //middlewares
 app.use(morgan("dev"));
