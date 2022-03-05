@@ -1,0 +1,19 @@
+// Descriptive Base Colors
+
+$orange        : rgb(255, 127, 80);
+$white         : #FFF;
+$black         : #0B0B0B;
+$athens-gray   : #EFF0F2;
+
+// color Usage
+$color-primary : $athens-gray;
+
+
+// Breakpoints
+$breakpoints: (
+        'xm': 320px,
+        'sm': 576px,
+        'med': 768px,
+        'lg': 992px,
+        'xl': 1200px,
+);

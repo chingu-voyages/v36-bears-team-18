@@ -1,0 +1,21 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@splidejs/splide': ^3.6.12
+  '@splidejs/vue-splide': ^0.5.18
+
+dependencies:
+  '@splidejs/splide': 3.6.12
+  '@splidejs/vue-splide': 0.5.18
+
+packages:
+
+  /@splidejs/splide/3.6.12:
+    resolution: {integrity: sha512-ggOUAuSxjWuxxL0IQEZcux26KByfKWfYM2HYmvDBdxkXc5evVW+xuECO+3iuciyrJpgcbYTr4hn0cHfbNlYIeA==}
+    dev: false
+
+  /@splidejs/vue-splide/0.5.18:
+    resolution: {integrity: sha512-S6mt03sRLipoTLz/aq+4AXoc58obe8uEH0X0uE5poCmW3mPwUiyu1ZqX/96EWoRQdrajlV7AFEXDFTS8Upy6FQ==}
+    dependencies:
+      '@splidejs/splide': 3.6.12
+    dev: false
