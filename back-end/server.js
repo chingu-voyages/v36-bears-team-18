@@ -34,6 +34,15 @@ process.on('uncaughtException', err => {
     process.exit(1);
 })
 
+
+
+// port
+const port = process.env.PORT || 8000;
+
+const server = app.listen(port, () => console.log(`Server is running on port ${port}`));
+
+
+
 process.on('unhandledRejection', err => {
     console.log(err.name, err.message);
     console.log('UNHANDLER REJECTION! Shutting Down....')
@@ -48,8 +57,3 @@ process.on('SIGTERM', () => {
         console.log('Process terminated!')
     })
 })
-
-// port
-const port = process.env.PORT || 8000;
-
-app.listen(port, () => console.log(`Server is running on port ${port}`));
